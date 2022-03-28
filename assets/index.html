@@ -19,6 +19,9 @@
     <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="icon-arrow-next">
       <path d="M21.1105 15.9988 8.35872 28.0565l-.04377.0408c-.10062.1046-.17901.2244-.23243.3531-.05405.1303-.08252.2698-.08252.4119 0 .3011.12781.5903.3561.8058.11097.105.24364.1885.39019.2455.14655.057.30401.0864.46307.0864.14864 0 .29587-.0256.4341-.0755a1.02269 1.02269 0 0 0 .02898-.0109c.14655-.057.27922-.1405.39016-.2455l13.5659-12.8274.0176-.017c.1337-.1315.2326-.2877.2914-.4566.0231-.0665.0401-.135.0504-.2047.0066-.0445.0106-.0896.0117-.1349a1.08862 1.08862 0 0 0-.0005-.0731 1.10701 1.10701 0 0 0-.0112-.1193c-.0004-.0024-.0007-.0048-.0011-.0072-.0379-.2439-.1561-.4726-.3407-.6541l-.0176-.017L10.06 2.32947c-.11087-.10431-.24322-.18718-.38929-.24376a1.2526 1.2526 0 0 0-.02854-.01065l-.00232-.00083a1.23259 1.23259 0 0 0-.0244-.00844C9.48541 2.02231 9.34799 2 9.20936 2c-.15843 0-.31528.02914-.46134.08571-.14607.05658-.27842.13945-.3893.24376-.22829.21543-.3561.50463-.3561.80578 0 .14207.02844.28147.08246.41173v.00001a1.10877 1.10877 0 0 0 .00998.02329c.05349.12104.1293.2337.22506.33264a1.1972 1.1972 0 0 0 .0386.03811L21.1105 15.9988Z" fill="currentColor"/><path d="M9.64217 2.07506a1.25835 1.25835 0 0 0-.00232-.00083l.00232.00083ZM9.67244 29.9136Z" fill="currentColor"/>
     </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="icon-arrow-sharp-next">
+      <path d="M20.1078 16 8 3.65055 9.61785 2 22.4985 15.1377l.8291.8623-.8291.8623L9.61536 30 8 28.3495 20.1078 16Z" fill="currentColor"/>
+    </symbol>
     <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="icon-star">
       <path d="M7.89972 28.2529c-.15253 0-.30505-.0714-.45758-.1427-.30505-.214-.38131-.4994-.30505-.7847l2.97421-8.5603-7.77874-5.3502c-.30505-.214-.38132-.4993-.30505-.7847.07626-.2853.38131-.4993.76262-.4993h9.68537l2.8979-8.63165C15.4497 3.21401 15.7548 3 16.1361 3c.3813 0 .6101.21401.7626.49935l2.9742 8.63165h9.6854c.305 0 .6101.1427.7626.428.1525.2853 0 .642-.3051.7847l-7.7787 5.2788 2.9742 8.5603c.0763.2854 0 .642-.305.7847-.3051.1427-.6101.214-.9152 0l-7.855-5.1362-7.77881 5.2789c-.15252.0713-.30505.1427-.45757.1427Zm8.23638-7.0623c.1525 0 .305.0714.4575.1427l6.3298 4.3515-2.4404-6.9909c-.0762-.2854 0-.6421.3051-.7847l6.3298-4.3515h-7.8551c-.305 0-.6101-.214-.7626-.4994l-2.3641-6.99086-2.4404 6.99086c-.0763.2854-.3813.4994-.7627.4994H5.07801l6.32979 4.3515c.305.214.3813.4993.305.7847l-2.36409 6.9909 6.32979-4.3515c.1525-.0713.305-.1427.4576-.1427Z" fill="currentColor"/>
     </symbol>
@@ -48,6 +51,7 @@
     </svg>
   -->
 
+  <!-- header -->
   <header class="absolute left-0 top-0 w-full h-14 md:h-16 2xl:h-[120px] z-10 text-white">
     <svg class="absolute w-[88px] h-8 2xl:w-[172px] 2xl:h-14 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" xmlns="http://www.w3.org/2000/svg">
       <use xlink:href="#logo"></use>
@@ -55,7 +59,12 @@
     <div class="container h-full">
       <div class="flex h-full items-center">
         <nav class="text-12 2xl:text-20 hidden lg:flex">
-          <a href="#" class="px-3.5 py-3 2xl:px-6 icon-menu-down">Магазин</a>
+          <a href="#" class="flex items-center px-3.5 py-3 2xl:px-6">
+            Магазин
+            <svg class="w-1.5 h-1.5 2xl:w-3 2xl:h-3 rotate-90 flex-none ml-1 2xl:ml-2 -mb-0.5" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="#icon-arrow-sharp-next"></use>
+            </svg>
+          </a>
           <a href="#" class="px-3.5 py-3 2xl:px-6">Доставка/оплата</a>
           <a href="#" class="px-3.5 py-3 2xl:px-6">Отзывы </a>
           <a href="#" class="px-3.5 py-3 2xl:px-6">Контакты</a>
@@ -94,6 +103,7 @@
       </div>
     </div>
   </header>
+  <!-- /header -->
 
   <main>
     <section>
@@ -111,29 +121,7 @@
                   sizes="100vw">
                 <div class="container relative 2xl:h-full">
                   <div class="md:grid md:grid-cols-8 lg:grid-cols-12 2xl:items-center 2xl:h-full">
-                    <div class="pt-[110px] md:pt-[130px] md:pl-11 lg:pt-[246px] lg:pl-0 2xl:p-0 md:col-span-6 lg:col-span-8 lg:col-start-2 2xl:col-span-7 2xl:col-start-2">
-                      <h2 class="text-18 lg:text-25 2xl:text-35 font-medium leading-snug lg:leading-normal">Экологичный домашний текстиль высокого качества из&nbsp;натуральных материалов</h2>
-                      <p class="text-12 lg:text-18 font-light mt-2.5 lg:mt-3 2xl:mt-4 pr-[30%]">Познакомьтесть и влюбитесь в&nbsp;наше постельное белье</p>
-                      <a href="#" class="inline-block text-12 lg:text-14 2xl:text-16 py-2 px-6 2xl:px-9 2xl:py-3 mt-6 lg:mt-8 2xl:mt-10 border border-white rounded w-[148] flex-none transition-colors duration-200 hover:bg-white hover:text-black-900">Подписаться</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="absolute left-0 bottom-0 w-full h-20 bg-gradient-to-t from-black-900/50 to-transparent"></div>
-              </div>
-
-            </li>
-            <li class="splide__slide">
-
-              <div class="bg-black-700 text-white h-[570px] md:h-[450px] lg:h-[768px] 2xl:h-[980px] relative">
-                <img class="absolute left-0 top-0 w-full h-full object-cover" src="images/main/banner-1-768.jpg"
-                  srcset="images/main/banner-1-768.jpg 768w,
-                          images/main/banner-1-768@2x.jpg 1536w,
-                          images/main/banner-1-1920.jpg 1920w,
-                          images/main/banner-1-1920@2x.jpg 3840w"
-                  sizes="100vw">
-                <div class="container relative 2xl:h-full">
-                  <div class="md:grid md:grid-cols-8 lg:grid-cols-12 2xl:items-center 2xl:h-full">
-                    <div class="pt-[110px] md:pt-[130px] md:pl-11 lg:pt-[246px] lg:pl-0 2xl:p-0 md:col-span-6 lg:col-span-8 lg:col-start-2 2xl:col-span-7 2xl:col-start-2">
+                    <div class="pt-[110px] md:pt-[130px] md:pl-11 lg:pt-[246px] lg:pl-0 2xl:p-0 md:col-span-6 lg:col-span-8 lg:col-start-2 2xl:col-span-7 2xl:col-start-2 max-w-[900px]">
                       <h2 class="text-18 lg:text-25 2xl:text-35 font-medium leading-snug lg:leading-normal">Экологичный домашний текстиль высокого качества из&nbsp;натуральных материалов</h2>
                       <p class="text-12 lg:text-18 font-light mt-2.5 lg:mt-3 2xl:mt-4 pr-[30%]">Познакомьтесть и влюбитесь в&nbsp;наше постельное белье</p>
                       <a href="#" class="inline-block text-12 lg:text-14 2xl:text-16 py-2 px-6 2xl:px-9 2xl:py-3 mt-6 lg:mt-8 2xl:mt-10 border border-white rounded w-[148] flex-none transition-colors duration-200 hover:bg-white hover:text-black-900">Подписаться</a>
@@ -168,12 +156,12 @@
     <section class="mt-10 md:mt-15 lg:mt-20 2xl:mt-36">
       <div class="container">
         <h2 class="text-18 md:text-22 lg:text-25 2xl:text-35 font-medium flex-none">Магазин</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-12 gap-5 lg:gap-16 2xl:gap-5">
+        <div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-12 gap-5 lg:gap-16 2xl:gap-5 mt-5 md:mt-10 lg:mt-14 2xl:mt-16">
 
-          <div class="grid grid-cols-2 lg:grid-cols-5 2xl:col-span-5 2xl:col-start-2 gap-5 items-center mt-5 md:mt-10 lg:mt-14 2xl:mt-16">
+          <div class="grid grid-cols-2 lg:grid-cols-5 2xl:col-span-5 2xl:col-start-2 gap-5 items-center">
             <div class="lg:col-span-2">
-              <p class="text-16 lg:text-18 2xl:text-25 leading-tight md:leading-normal h-20 lg:h-auto overflow-hidden">Комплекты постельного белья</p>
-              <a href="#" class="text-11 lg:text-14 2xl:text-16 inline-block border border-black-700 rounded py-2 px-6 mt-4 lg:mt-9 transition-colors duration-200 hover:bg-black-900 hover:text-white">Посмотреть</a>
+              <p class="text-16 lg:text-18 2xl:text-25 leading-tight md:leading-normal h-20 overflow-hidden">Комплекты постельного белья</p>
+              <a href="#" class="text-11 lg:text-14 2xl:text-16 inline-block border border-black-700 rounded py-2 px-6 mt-4 lg:mt-2 2xl:mt-8 transition-colors duration-200 hover:bg-black-900 hover:text-white">Посмотреть</a>
             </div>
             <div class="lg:col-span-3">
               <img class="block w-full rounded object-cover lg:aspect-[19/30] 2xl:aspect-[11/15]" src="images/main/image-1.jpg" srcset="images/main/image-1.jpg x1, images/main/image-1@2x.jpg 2x">
@@ -182,8 +170,8 @@
 
           <div class="grid grid-cols-2 lg:grid-cols-5 2xl:col-span-5 2xl:col-start-8 gap-5 items-center">
             <div class="lg:col-span-2">
-              <p class="text-16 lg:text-18 2xl:text-25 leading-tight md:leading-normal h-20 lg:h-auto overflow-hidden">Одежда для&nbsp;дома</p>
-              <a href="#" class="text-11 lg:text-14 2xl:text-16 inline-block border border-black-700 rounded py-2 px-6 mt-4 lg:mt-9 transition-colors duration-200 hover:bg-black-900 hover:text-white">Посмотреть</a>
+              <p class="text-16 lg:text-18 2xl:text-25 leading-tight md:leading-normal h-20 overflow-hidden">Одежда для&nbsp;дома</p>
+              <a href="#" class="text-11 lg:text-14 2xl:text-16 inline-block border border-black-700 rounded py-2 px-6 mt-4 lg:mt-2 2xl:mt-8 transition-colors duration-200 hover:bg-black-900 hover:text-white">Посмотреть</a>
             </div>
             <div class="lg:col-span-3">
               <img class="block w-full rounded object-cover lg:aspect-[19/30] 2xl:aspect-[11/15]" src="images/main/image-2.jpg" srcset="images/main/image-2.jpg x1, images/main/image-2@2x.jpg 2x">
@@ -205,6 +193,7 @@
             <a href="#" class="block rounded bg-white border border-gray-400">
               <div class="-m-[1px] relative">
                 <img class="block w-full rounded" src="https://placehold.co/600x600">
+                <div class="absolute left-0 bottom-0 w-full h-6 md:h-9 2xl:h-20 bg-gradient-to-t from-black-900/50 to-transparent"></div>
                 <div class="text-white flex items-center justify-between absolute left-1.5 right-1.5 bottom-2 2xl:left-4 2xl:right-4 2xl:bottom-3.5">
                   <div class="flex items-center">
                     <div class="flex space-x-0.5">
@@ -265,6 +254,7 @@
             <a href="#" class="block rounded bg-white border border-gray-400">
               <div class="-m-[1px] relative">
                 <img class="block w-full rounded" src="https://placehold.co/600x600">
+                <div class="absolute left-0 bottom-0 w-full h-6 md:h-9 2xl:h-20 bg-gradient-to-t from-black-900/50 to-transparent"></div>
                 <div class="text-white flex items-center justify-between absolute left-1.5 right-1.5 bottom-2 2xl:left-4 2xl:right-4 2xl:bottom-3.5">
                   <div class="flex items-center">
                     <div class="flex space-x-0.5">
@@ -325,6 +315,7 @@
             <a href="#" class="block rounded bg-white border border-gray-400">
               <div class="-m-[1px] relative">
                 <img class="block w-full rounded" src="https://placehold.co/600x600">
+                <div class="absolute left-0 bottom-0 w-full h-6 md:h-9 2xl:h-20 bg-gradient-to-t from-black-900/50 to-transparent"></div>
                 <div class="text-white flex items-center justify-between absolute left-1.5 right-1.5 bottom-2 2xl:left-4 2xl:right-4 2xl:bottom-3.5">
                   <div class="flex items-center">
                     <div class="flex space-x-0.5">
@@ -385,6 +376,7 @@
             <a href="#" class="block md:hidden lg:block rounded bg-white border border-gray-400">
               <div class="-m-[1px] relative">
                 <img class="block w-full rounded" src="https://placehold.co/600x600">
+                <div class="absolute left-0 bottom-0 w-full h-6 md:h-9 2xl:h-20 bg-gradient-to-t from-black-900/50 to-transparent"></div>
                 <div class="text-white flex items-center justify-between absolute left-1.5 right-1.5 bottom-2 2xl:left-4 2xl:right-4 2xl:bottom-3.5">
                   <div class="flex items-center">
                     <div class="flex space-x-0.5">
@@ -727,6 +719,7 @@
 
   </main>
 
+  <!-- footer -->
   <footer class="bg-gray-200">
     <div class="container">
       <div class="pt-15 pb-8 md:pt-18 md:pb-14 lg:pb-16 2xl:pt-12 2xl:pb-9 md:grid md:grid-cols-3 md:gap-5 lg:grid-cols-12">
@@ -813,6 +806,7 @@
       </div>
     </div>
   </footer>
+  <!-- /footer -->
 
   <script src="js/splide.min.js"></script>
   <script src="js/main.js"></script>

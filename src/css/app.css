@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply font-sans text-black-500;
+    @apply font-sans text-black-700;
   }
 
   body::-webkit-scrollbar {
@@ -20,10 +20,6 @@
 @layer components {
   .container {
     @apply max-w-[1930px] mx-auto w-auto px-2.5 md:px-5 lg:px-10 2xl:px-24;
-  }
-
-  .icon-menu-down {
-    @apply inline-flex items-center after:inline-block after:w-1 after:h-1 2xl:after:w-2 2xl:after:h-2 after:border-b-[0.5px] after:border-r-[0.5px] after:border-white after:rotate-45 after:ml-1 2xl:after:ml-2 2xl:after:-mt-0.5;
   }
 }
 
