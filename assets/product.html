@@ -52,14 +52,14 @@
   -->
 
   <!-- header -->
-  <header class="absolute left-0 top-0 w-full h-14 md:h-16 2xl:h-[120px] z-10 text-black-700">
+  <header class="absolute left-0 top-0 w-full h-14 md:h-16 2xl:h-[120px] z-10 text-black-700 border-b border-gray-300">
     <svg class="absolute w-[88px] h-8 2xl:w-[172px] 2xl:h-14 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" xmlns="http://www.w3.org/2000/svg">
       <use xlink:href="#logo"></use>
     </svg>
     <div class="container h-full">
       <div class="flex h-full items-center">
         <nav class="text-12 2xl:text-20 hidden lg:flex">
-          <a href="#" class="flex items-center px-3.5 py-3 2xl:px-6">
+          <a href="#" class="flex items-center px-3.5 py-3 2xl:px-6 first:pl-0">
             Магазин
             <svg class="w-1.5 h-1.5 2xl:w-3 2xl:h-3 rotate-90 flex-none ml-1 2xl:ml-2 -mb-0.5" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="#icon-arrow-sharp-next"></use>
@@ -107,14 +107,161 @@
 
   <main class="pt-14 md:pt-16 2xl:pt-[120px]">
     <section>
-      <div class="container">
-        <div class="pt-4 pb-3">
-          <ul class="flex flex-wrap text-12 leading-tight">
-            <li><a href="#">Главная</a> / </li>
-            <li><a href="#">Магазин</a> / </li>
-            <li><a href="#">Постельное белье</a> / </li>
+      <div class="container pb-15 lg:pb-24 2xl:grid 2xl:grid-cols-12 2xl:gap-x-5">
+        <div class="pt-4 pb-3 md:py-7 2xl:pt-8 2xl:pb-0 2xl:col-span-full 2xl:-order-2">
+          <ul class="flex flex-wrap text-10 md:text-12 lg:text-14 2xl:text-16 leading-tight">
+            <li class="text-gray-600"><a href="#">Главная</a> /&nbsp;</li>
+            <li class="text-gray-600"><a href="#">Магазин</a> /&nbsp;</li>
+            <li><a href="#">Постельное белье</a> /&nbsp;</li>
             <li><a href="#">Коллекция Sinple Оттенок Bondi Beach</a></li>
           </ul>
+        </div>
+        <div class="-mx-2.5 md:m-0 2xl:col-span-7 md:grid md:grid-cols-7 lg:grid-cols-12 2xl:grid-cols-7 md:gap-2 lg:gap-5">
+
+          <div id="product-gallery" class="md:col-span-6 lg:col-span-10 2xl:col-span-6 splide" data-splide='{"type": "loop", "perPage": 1, "arrows": false, "classes": {"pagination": "splide__pagination flex justify-center space-x-1.5 absolute left-1/2 bottom-5 -translate-x-1/2 md:hidden", "page": "splide__pagination__page slider-dot-md"}}'>
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide relative after:absolute after:left-0 after:bottom-0 after:w-full after:h-15 after:bg-gradient-to-t after:from-black-900/50 after:to-transparent md:after:hidden">
+                  <img src="https://placehold.co/600x400" class="block w-full aspect-square md:aspect-[7/5] object-cover rounded">
+                </li>
+                <li class="splide__slide relative after:absolute after:left-0 after:bottom-0 after:w-full after:h-15 after:bg-gradient-to-t after:from-black-900/50 after:to-transparent md:after:hidden">
+                  <img src="https://placehold.co/600x400" class="block w-full aspect-square md:aspect-[7/5] object-cover rounded">
+                </li>
+                <li class="splide__slide relative after:absolute after:left-0 after:bottom-0 after:w-full after:h-15 after:bg-gradient-to-t after:from-black-900/50 after:to-transparent md:after:hidden">
+                  <img src="https://placehold.co/600x400" class="block w-full aspect-square md:aspect-[7/5] object-cover rounded">
+                </li>
+                <li class="splide__slide relative after:absolute after:left-0 after:bottom-0 after:w-full after:h-15 after:bg-gradient-to-t after:from-black-900/50 after:to-transparent md:after:hidden">
+                  <img src="https://placehold.co/600x400" class="block w-full aspect-square md:aspect-[7/5] object-cover rounded">
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div id="product-thumbnails" class="hidden md:block md:col-span-1 lg:col-span-2 2xl:col-span-1 2xl:-order-1 splide" data-splide='{"type": "loop", "direction": "ttb", "heightRatio": 3.7, "perPage": 4, "gap": "12px", "arrows": false, "pagination": false}'>
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide relative after:absolute after:left-0 after:bottom-0 after:w-full after:h-15 after:bg-gradient-to-t after:from-black-900/50 after:to-transparent md:after:hidden">
+                  <img src="https://placehold.co/600x400" class="block w-full h-full object-cover rounded">
+                </li>
+                <li class="splide__slide relative after:absolute after:left-0 after:bottom-0 after:w-full after:h-15 after:bg-gradient-to-t after:from-black-900/50 after:to-transparent md:after:hidden">
+                  <img src="https://placehold.co/600x400" class="block w-full h-full object-cover rounded">
+                </li>
+                <li class="splide__slide relative after:absolute after:left-0 after:bottom-0 after:w-full after:h-15 after:bg-gradient-to-t after:from-black-900/50 after:to-transparent md:after:hidden">
+                  <img src="https://placehold.co/600x400" class="block w-full h-full object-cover rounded">
+                </li>
+                <li class="splide__slide relative after:absolute after:left-0 after:bottom-0 after:w-full after:h-15 after:bg-gradient-to-t after:from-black-900/50 after:to-transparent md:after:hidden">
+                  <img src="https://placehold.co/600x400" class="block w-full h-full object-cover rounded">
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <img class="hidden 2xl:block w-full rounded aspect-video object-cover col-span-6 col-start-2 mt-2.5" src="https://placehold.co/600x400">
+
+        </div>
+        <div class="pt-4 2xl:pt-5 2xl:col-span-full 2xl:-order-1 2xl:mb-9">
+          <h1 class="text-14 md:text-20 lg:text-25 2xl:text-35 leading-tight font-medium">Постельное белье Коллекция "Simple" — Bondi Beach</h1>
+        </div>
+        <div class="mt-4 2xl:col-span-5">
+          <div class="flex items-center justify-between">
+            <div class="flex-none text-14 md:text-20 lg:text-25">6300 руб.</div>
+            <div class="flex items-center">
+              <div class="flex items-center">
+                <svg class="w-3.5 h-3.5 md:w-4 md:h-4 lg:w-5 lg:h-5" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="#icon-star-fill"></use>
+                </svg>
+                <svg class="w-3.5 h-3.5 md:w-4 md:h-4 lg:w-5 lg:h-5" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="#icon-star-fill"></use>
+                </svg>
+                <svg class="w-3.5 h-3.5 md:w-4 md:h-4 lg:w-5 lg:h-5" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="#icon-star-fill"></use>
+                </svg>
+                <svg class="w-3.5 h-3.5 md:w-4 md:h-4 lg:w-5 lg:h-5" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="#icon-star-fill"></use>
+                </svg>
+                <svg class="w-3.5 h-3.5 md:w-4 md:h-4 lg:w-5 lg:h-5" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="#icon-star"></use>
+                </svg>
+              </div>
+              <p class="text-10 md:text-14 lg:text-16 ml-2 md:ml-3 2xl:ml-2">4 отзыва </p>
+            </div>
+          </div>
+          <div class="mt-4 md:mt-6">
+            <p class="text-10 md:text-16 lg:text-18 font-light">Коллекция Sangria названа в честь традиционного для Южной Испании напитка из нагретого на солнце виноградного вина с апельсиновым соком. Звучит так же волшебно, как и выглядит.</p>
+
+            <div class="mt-4 md:mt-8 lg:mt-6 pt-4 md:pt-5 lg:pt-6 border-t border-gray-400">
+              <p class="text-10 md:text-16 lg:text-18 font-light"><span class="text-gray-700">Цвет:</span> Бирюзовый</p>
+              <div class="mt-4 flex items-center space-x-3 md:space-x-5">
+                <div class="p-1 border border-gray-700 rounded-full">
+                  <div class="w-7 h-7 rounded-full bg-gray-700"></div>
+                </div>
+
+                <div class="border-2 border-gray-400 rounded-full">
+                  <div class="w-6 h-6 rounded-full bg-gray-500"></div>
+                </div>
+
+                <div class="border-2 border-gray-400 rounded-full">
+                  <div class="w-6 h-6 rounded-full bg-gray-500"></div>
+                </div>
+
+                <div class="border-2 border-gray-400 rounded-full">
+                  <div class="w-6 h-6 rounded-full bg-gray-500"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4 md:mt-5 lg:mt-6 pt-4 md:pt-5 lg:pt-6 border-t border-gray-400">
+              <div class="flex justify-between text-10 md:text-16 lg:text-18 font-light text-gray-700">
+                <span>Размер:</span>
+                <span class="underline md:text-14 lg:text-16">Таблица размеров</span>
+              </div>
+
+              <div class="mt-5 grid grid-cols-2 2xl:grid-cols-3 md:grid-cols-4 gap-2.5 md:gap-5 text-12 md:text-16 text-gray-700 text-center items-center">
+                <button class="text-black-700 rounded px-6 py-2 lg:py-3 border border-black-700">1 спальный</button>
+                <button class="rounded px-6 py-2 lg:py-3 border border-gray-700 transition-all duration-200 hover:border-black-700 hover:text-black-700">1.5 спальный</button>
+                <button class="rounded px-6 py-2 lg:py-3 border border-gray-700 transition-all duration-200 hover:border-black-700 hover:text-black-700">2 спальный</button>
+                <button class="rounded px-6 py-2 lg:py-3 border border-gray-700 transition-all duration-200 hover:border-black-700 hover:text-black-700">Семейный</button>
+                <button class="rounded px-6 py-2 lg:py-3 border border-gray-700 transition-all duration-200 hover:border-black-700 hover:text-black-700">Евро</button>
+                <button class="rounded px-6 py-2 lg:py-3 border border-gray-700 transition-all duration-200 hover:border-black-700 hover:text-black-700">Евро-макси</button>
+                <span class="col-span-2 2xl:col-span-3 text-11 md:text-14 lg:text-16 underline p-1 md:text-left 2xl:text-center">У меня не стандартный размер</span>
+              </div>
+            </div>
+
+            <div class="mt-4 pt-5 border-t border-gray-400 md:border-none md:mt-8 md:pt-0 lg:mt-12">
+              <div class="flex">
+                <div class="flex-auto flex text-11 md:text-14 lg:text-16 h-9 md:h-11 lg:h-12">
+                  <div class="flex items-center flex-none border border-r-0 border-gray-400 rounded-l px-2.5">
+                    <button class="w-6 h-6 md:w-9 md:h-9 lg:w-10 lg:h-10">-</button>
+                    <span class="w-8 md:w-12 text-center">1</span>
+                    <button class="w-6 h-6 md:w-9 md:h-9 lg:w-10 lg:h-10">+</button>
+                  </div>
+
+                  <button class="flex-auto w-full bg-orange-200 hover:bg-orange-300 transition-colors duration-300 rounded-r">В корзину</button>
+                </div>
+
+                <button class="flex-none flex items-center justify-center w-8 h-8 md:w-11 md:h-11 lg:w-12 lg:h-12 ml-2 md:ml-2.5 lg:ml-7">
+                  <svg class="w-6 h-6 lg:w-8 lg:h-8" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="#icon-heart"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="text-center text-10 md:text-14 2xl:text-16 text-gray-850 underline mt-4 md:mt-5 md:pl-36 md:pr-14 md:text-center 2xl:pl-[150px] 2xl:text-left">Гарантия 1 год + бесплатная доставка от 5000р</div>
+            </div>
+
+            <div class="grid gap-5 md:grid-cols-2 md:gap-6 lg:gap-10 md:mt-11 lg:mt-15 2xl:mt-24 2xl:block">
+              <div class="mt-8 md:m-0 md:pt-1">
+                <ul class="text-14 md:text-16 lg:text-18 2xl:text-20 text-gray-700 2xl:flex 2xl:justify-between">
+                  <li><a class="inline-block py-1.5 md:py-1 text-black-700 underline" href="#">Коллекция и материал</a></li>
+                  <li><a class="inline-block py-1.5 md:py-1" href="#">Рекомендации по уходу</a></li>
+                  <li><a class="inline-block py-1.5 md:py-1" href="#">Доставка</a></li>
+                </ul>
+
+                <div class="mt-6 md:mt-5 lg:mt-8 2xl:mt-9 text-12 md:text-14 lg:text-18">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl vulputate egestas sapien ac. In blandit a, tristique tellus condimentum eleifend fermentum. Sed platea enim praesent vulputate tortor. Lobortis ut pharetra ullamcorper quis pellentesque. Congue venenatis ac placerat vehicula et, vestibulum, duis cursus sit. Interdum faucibus consectetur dictum egestas enim mollis amet, tellus. Tincidunt semper nam sed parturient orci. Elementum ultrices sed in penatibus sem massa dignissim tortor viverra. Cras sodales pharetra, pellentesque arcu nunc.</div>
+              </div>
+
+              <img class="block w-full rounded aspect-square object-cover md:-order-1 2xl:hidden" src="https://placehold.co/600x400">
+            </div>
+          </div>
         </div>
       </div>
     </section>

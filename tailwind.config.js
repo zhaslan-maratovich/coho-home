@@ -6,6 +6,7 @@ module.exports = {
       md: '768px',
       lg: '1024px',
       '2xl': '1200px',
+      // '2xl': '1920px',
     },
     colors: {
       transparent: 'transparent',
@@ -18,6 +19,7 @@ module.exports = {
       white: '#FFFFFF',
       orange: {
         200: '#EFE5DE',
+        300: '#E0D7D0',
       },
       gray: {
         100: '#F6F6F6',
